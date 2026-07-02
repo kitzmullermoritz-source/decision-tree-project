@@ -1,0 +1,120 @@
+:root {
+    --color-bg: #fafaf9;
+    --color-text: #1f2933;
+    --color-muted: #6b7280;
+    --color-accent: #2563eb;
+    --color-recommended: #15803d;
+    --color-recommended-bg: #ecfdf3;
+    --color-error: #b91c1c;
+    --color-error-bg: #fef2f2;
+    --color-border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--color-text);
+    background: var(--color-bg);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.site-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+    background: white;
+}
+
+.site-title {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.site-footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+.analysis-list {
+    list-style: none;
+    padding: 0;
+}
+
+.analysis-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.overall-result {
+    font-size: 1.1rem;
+}
+
+.error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
+ul.tree, ul.tree ul {
+    list-style: none;
+    padding-left: 1.25rem;
+}
+
+ul.tree {
+    padding-left: 0;
+}
+
+.node {
+    margin: 0.4rem 0;
+}
+
+.node-label {
+    display: inline-block;
+}
+
+.node-type {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+
+.edge {
+    border-left: 2px solid var(--color-border);
+    padding-left: 0.75rem;
+    margin: 0.4rem 0;
+}
+
+.edge-recommended {
+    border-left-color: var(--color-recommended);
+    background: var(--color-recommended-bg);
+    border-radius: 0 6px 6px 0;
+}
+
+.edge-label {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.recommended-flag {
+    color: var(--color-recommended);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Decision Tree Assistant{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-title" href="{{ url_for('index') }}">Decision Tree Assistant</a>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">
+        <p>This tool supports reflection about a decision. It does not guarantee
+           that any recommended action is objectively optimal in the real world.</p>
+    </footer>
+</body>
+</html>
